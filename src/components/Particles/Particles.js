@@ -39,22 +39,22 @@ const ParticlesBg = (props) => {
                         "events": {
                             "onhover": {
                                 "enable": true,
-                                "mode": "bubble",
+                                "mode": "repulse",
                             },
                             "onclick": {
                                 "enable": true,
-                                "mode": "repulse"
+                                "mode": "bubble"
                             }
                         },
                         "modes": {
                             "bubble": {
-                                "distance": 200,
-                                "duration": 0.5,
+                                "distance": 400,
+                                "duration": 0.3,
                                 "size": 2.5,
                                 "opacity": 1,
                             },
                             "repulse": {
-                                "distance": 300,
+                                "distance": 90,
                                 "duration": 0.2
                             }
                         }
