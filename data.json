@@ -1,0 +1,53 @@
+{
+"client":"GCPE-cannabis-awareness",
+"date":"2/9/2018 2:50:26 PM",
+"headline":"Hi, GCPE-cannabis-awareness",
+"logoLink":"http://greycanada.com/repo/logo1.svg",
+"contactName":"Neil McPhedran, General Manager",
+"contactNumber":"604-364-3644",
+"sub-headline":"<br>",
+"clients": [
+{
+"name":"BC Used Oil",
+"urlId":"bc-used-oil",
+"id":"1",
+"caseStudies": [
+{
+"type": "video", 
+"vimeoId":"298453225",
+"title":"NACHOS",
+"posterImage":"../media/videos/images/nachos.jpg",
+"blurb": "DIY Social Engagement Campaign"
+},
+{
+"type": "video", 
+"vimeoId":"298453233",
+"title":"ROCKSTAR",
+"posterImage":"../media/videos/images/rockstar.jpg",
+"blurb": ""
+},
+{
+"type": "video", 
+"vimeoId":"298453202",
+"title":"BAGGAGE",
+"posterImage":"../media/videos/images/baggage.jpg",
+"blurb": ""
+}
+]
+},
+ {
+"name":"GCPE",
+"urlId":"gcpe",
+"id":"2",
+"caseStudies": [
+{
+"type": "video", 
+"vimeoId":"298453249",
+"title":"Get Cannabis Clarity",
+"posterImage":"../media/videos/images/gcpe_banner.png",
+"blurb": ""
+}
+]
+}
+]
+}

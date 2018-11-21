@@ -1,4 +1,20 @@
-.Particles {
-    background: #1E1E30;
+.ParticleContainer {
     height: 100vh;
+}
+
+.ParticleCanvas {
+    height: 100vh !important;
+    opacity: 0;
+    animation: fadeIn 0.8s 1s forwards;
+    position: fixed;
+    z-index: 5;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
