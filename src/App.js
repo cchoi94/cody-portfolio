@@ -13,8 +13,8 @@ class App extends Component {
     return (
       <Aux>
           <ParticlesBg/>
-          <AboutPage />
           <LandingPage />
+          <AboutPage />
           <WorkPage />
           <ContactPage />
       </Aux>

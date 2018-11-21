@@ -1,4 +1,39 @@
-/* .AboutContainer img {
-    width: 200px;
-    padding: 2em;
-} */
+.AboutPageContent {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.AboutPortrait {
+    background-image: url('../../assets/images/selfPortrait.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    margin-bottom: 5em;
+    width: 40%;
+}
+
+.SkillSet {
+    margin-bottom: 5em;
+    width: 40%;
+}
+
+.SkillSet p {
+    color: #ffffff;
+    font-size: 3em;
+    margin-bottom: 1em;
+    text-decoration: underline;
+}
+
+.SkillSet ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.SkillSet li img {
+    max-width: 100%;
+    height: auto;
+}
