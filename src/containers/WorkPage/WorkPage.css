@@ -11,8 +11,8 @@
 	width: 45%;
 	padding: 2.5em 0;
 	margin: 2.5%;
-	color: #1E1E30;
-	background: #ffffffd3;
+	color: rgba(255, 255, 255, 0);
+	border: 1px solid white;
 	z-index: 10;
 }
 
@@ -28,7 +28,7 @@
 		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
 	}
 	100%{
-		background: #1E1E30;
+		background: rgba(30, 30, 48, 0.753);
 		color: #ffffff;
 	}
 }

@@ -8,3 +8,16 @@ body {
     font-size: 14px;
     background: #1E1E30;
 }
+
+h2 {
+    text-align: center;
+    color: #1E1E30;
+    font-size: 3em;
+    margin: 0 auto 0.5em auto;
+    font-weight: 500;
+    background: #ffffff;
+    padding: 0.3em 0;
+    width: 45%;
+    -webkit-clip-path: polygon(0 0, 84% 0, 100% 100%, 17% 100%);
+    clip-path: polygon(0 0, 84% 0, 100% 100%, 17% 100%);
+}

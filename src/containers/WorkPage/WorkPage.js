@@ -1,18 +1,19 @@
 import React, {Component} from 'react';
-
 import classes from './WorkPage.css'
+
+import Aux from '../../hoc/Aux'
 
 class WorkPage extends Component {
     constructor() {
         super();
         this.state = {
             workPieces: [
-                {name: 'Scrim', thumbnail: '/'},
-                {name: 'Growth Pains', thumbnail: '/'},
-                {name: 'Waaa Choop', thumbnail: '/'},
-                {name: 'Bikeshare', thumbnail: '/'},
-                {name: 'Parapug', thumbnail: '/'},
-                {name: 'Startupz', thumbnail: '/'},
+                {name: 'Scrim', thumbnail: 'https://www.placecage.com/640/360'},
+                {name: 'Growth Pains', thumbnail: 'https://www.placecage.com/640/360'},
+                {name: 'Waaa Choop', thumbnail: 'https://www.placecage.com/640/360'},
+                {name: 'Bikeshare', thumbnail: 'https://www.placecage.com/640/360'},
+                {name: 'Parapug', thumbnail: 'https://www.placecage.com/640/360'},
+                {name: 'Startupz', thumbnail: 'https://www.placecage.com/640/360'},
             ]
         }
     }
@@ -20,19 +21,25 @@ class WorkPage extends Component {
     render() {
         const portfolio = (
             this.state.workPieces.map(el => {
+                const thumbnail = {
+                    backgroundImage: `url(${el.thumbnail})`,
+                    backgroundPosition: `center`,
+                    backgroundSize: `cover`
+                }
                 return(
-                <div className={classes.PortBox}>
-                    <p>
-                        {el.name}
-                    </p>
+                <div className={classes.PortBox} style={thumbnail}>
+                    <p>{el.name}</p>
                 </div>
                 )
             })
         )
         return (
-            <div className={classes.WorkBg}>
-                {portfolio}
-            </div>
+            <Aux>
+                <h2>Works</h2>
+                <div className={classes.WorkBg}>
+                    {portfolio}
+                </div>
+            </Aux>
         )
     }
 }
