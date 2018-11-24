@@ -3,17 +3,24 @@ import classes from './WorkPage.css'
 
 import Aux from '../../hoc/Aux'
 
+import Scrim from '../../assets/images/portPcs/scrim.png'
+import GrowthPains from '../../assets/images/portPcs/growthPains.png'
+import WaaaChooop from '../../assets/images/portPcs/waaachooop.png'
+import BikeShare from '../../assets/images/portPcs/bikeShare.png'
+import Parapug from '../../assets/images/portPcs/paraPug.png'
+import Startupz from '../../assets/images/portPcs/startupz.png'
+
 class WorkPage extends Component {
     constructor() {
         super();
         this.state = {
             workPieces: [
-                {name: 'Scrim', thumbnail: 'https://www.placecage.com/640/360'},
-                {name: 'Growth Pains', thumbnail: 'https://www.placecage.com/640/360'},
-                {name: 'Waaa Choop', thumbnail: 'https://www.placecage.com/640/360'},
-                {name: 'Bikeshare', thumbnail: 'https://www.placecage.com/640/360'},
-                {name: 'Parapug', thumbnail: 'https://www.placecage.com/640/360'},
-                {name: 'Startupz', thumbnail: 'https://www.placecage.com/640/360'},
+                {name: 'Scrim', thumbnail: Scrim},
+                {name: 'Growth Pains', thumbnail: GrowthPains},
+                {name: 'Waaa Choop', thumbnail: WaaaChooop},
+                {name: 'Bikeshare', thumbnail: BikeShare},
+                {name: 'Parapug', thumbnail: Parapug},
+                {name: 'Startupz', thumbnail: Startupz},
             ]
         }
     }
@@ -24,7 +31,8 @@ class WorkPage extends Component {
                 const thumbnail = {
                     backgroundImage: `url(${el.thumbnail})`,
                     backgroundPosition: `center`,
-                    backgroundSize: `cover`
+                    backgroundSize: `contain`,
+                    backgroundRepeat: `no-repeat`
                 }
                 return(
                 <div className={classes.PortBox} style={thumbnail}>

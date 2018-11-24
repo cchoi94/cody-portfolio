@@ -2,30 +2,27 @@
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: space-around; */
+	justify-content: space-around;
 }
 
 .PortBox {
 	text-align: center;
 	font-size: 2em;
-	width: 45%;
+	width: 40%;
 	padding: 2.5em 0;
 	margin: 2.5%;
 	color: rgba(255, 255, 255, 0);
-	border: 1px solid white;
 	z-index: 10;
 }
 
 .PortBox:hover {
 	border: none;
-	animation: boxMorph 0.4s forwards;
+	animation: boxFade 0.3s forwards;
 }
 
-@keyframes boxMorph {
+@keyframes boxFade {
 	0%{
-		/* background: #ffffff; */
-		/* -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+
 	}
 	100%{
 		background: rgba(30, 30, 48, 0.753);
